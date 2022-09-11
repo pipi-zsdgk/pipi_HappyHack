@@ -56,6 +56,11 @@ nav a{
     align-items: flex-end;
 }
 
+nav a:hover{
+    color: #3d5cdb;
+    transition: 0.5s;
+}
+
 .title{
     font-size: 50px;
     color: #3d5cdb;
@@ -76,7 +81,7 @@ nav a{
 
 .intro-content-box{
     width: 400px;
-    padding: 20px 100px 20px;
+    padding: 20px 80px 30px 50px;
     text-align: center;
 }
 
@@ -97,6 +102,10 @@ nav a{
     border-radius: 10px;
 }
 
+.btn-001:hover{
+    box-shadow: 0px 0px 5px #606060;
+}
+
 .btn-002{
     font-size: 18px;
     font-weight: bold;
@@ -107,23 +116,24 @@ nav a{
     border-radius: 10px;
 }
 
+.btn-002:hover{
+    box-shadow: 0px 0px 5px #606060;
+}
+
 #courses{
-    position: relative;
-    overflow: hidden;
     background-color: #d6e5f9;
 }
 
 #particles-js{
     height: 100vh;
     width: 100vw;
-    display: block;
 }
 
 canvas {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: -1;
 }
 
 .courses{
@@ -170,6 +180,10 @@ canvas {
     padding: 10px 20px;
     font-size: 13px;
     border-radius: 10px;
+}
+
+.btn:hover{
+    box-shadow: 0px 0px 5px #606060;
 }
 
 .btn-html{
@@ -242,11 +256,6 @@ footer p{
 
 /*レスポンシブ化*/
 
-/*スマホ横*/
-@media screen and (max-width: 896px){
-
-}
-
 /*スマホ縦*/
 @media screen and (max-width: 480px){
 
@@ -270,12 +279,16 @@ footer p{
 }
 
 .intro-content{
-    display: block;
-    text-align: center;
+    flex-direction: column;
+}
+
+.content-2{
+    flex-direction: column-reverse;
 }
 
 .intro-content img{
     width: 90vw;
+    margin: 0 auto;
 }
 
 .intro-content-box{
@@ -288,15 +301,20 @@ footer p{
     font-size: 13px;
 }
 
+#courses{
+    height: 1100px;
+}
+
 .courses{
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .course{
-    width: 39vw;
+    width: 40vw;
     height: 20vh;
     padding: 20px 5px 10px;
+    margin-left: 15px;
 }
 
 .course img{
@@ -311,12 +329,21 @@ footer p{
 }
 
 .course a{
-    width: 30vw;
+    width: 20vw;
+}
+
+.course-top,.course-bottom{
+    display: block;
 }
 
 .images{
     width: 80vw;
     margin: 0 auto;
+}
+
+#access{
+    height: 80%;
+    margin-top: 100px;
 }
 
 .map iframe{
