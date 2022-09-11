@@ -141,26 +141,24 @@ canvas {
     width: 1200px;
 }
 
-.course{
+.courses {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .course {
     background-color: #fff;
-    padding: 60px 20px 20px;
-    margin: 20px;
-    text-align: center;
     width: 200px;
     height: 250px;
+    margin: 20px;
     border-radius: 10px;
+    padding: 60px 20px 20px;
+    display: block;
     box-shadow: 0 0 0 #000;
-}
-
-.course-top{
-    display: flex;
-    justify-content: center;
-}
-
-.course-bottom{
-    display: flex;
-    justify-content: center;
-}
+    text-align: center;
+  }
 
 .course img{
     margin-bottom: 40px;
@@ -302,20 +300,22 @@ footer p{
 }
 
 #courses{
-    height: 1100px;
+    height: 1300px;
 }
 
 .courses{
     display: flex;
     flex-wrap: wrap;
+    width: 400px;
 }
 
 .course{
-    width: 40vw;
-    height: 20vh;
-    padding: 20px 5px 10px;
-    margin-left: 15px;
-}
+    flex-basis: 140px;
+    height: 200px;
+    background-color: #ffffff;
+    display: block;
+    padding: 30px 10px 0px;
+  }
 
 .course img{
     margin-bottom: 10px;
@@ -330,10 +330,7 @@ footer p{
 
 .course a{
     width: 20vw;
-}
-
-.course-top,.course-bottom{
-    display: block;
+    padding: 10px;
 }
 
 .images{
