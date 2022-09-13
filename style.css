@@ -32,14 +32,15 @@
 
 nav{
     position: relative;
-    top: 30px;
-    left: 1100px;
     width: 100%;
     margin-bottom: 200px;
+    padding-top: 30px;
+    right: 60px;
 }
 
 nav ul{
     display: flex;
+    justify-content: flex-end;
 }
 
 nav li{
@@ -152,7 +153,7 @@ canvas {
     background-color: #fff;
     width: 200px;
     height: 250px;
-    margin: 20px;
+    margin: 10px;
     border-radius: 10px;
     padding: 60px 20px 20px;
     display: block;
@@ -178,6 +179,7 @@ canvas {
     padding: 10px 20px;
     font-size: 13px;
     border-radius: 10px;
+    font-weight: bold;
 }
 
 .btn:hover{
@@ -256,6 +258,10 @@ footer p{
 
 /*スマホ縦*/
 @media screen and (max-width: 480px){
+    
+nav{
+    display: none;
+}
 
 .bg-switcher{
     display: block;
@@ -306,7 +312,7 @@ footer p{
 .courses{
     display: flex;
     flex-wrap: wrap;
-    width: 400px;
+    width: 100%;
 }
 
 .course{

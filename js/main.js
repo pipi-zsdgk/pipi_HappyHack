@@ -26,7 +26,7 @@ $(function($){
         responsive: [{
             breakpoint: 400,
             settings: {
-              slidesToShow: 1,
+              slidesToShow: 1
             }
         }]
     });
